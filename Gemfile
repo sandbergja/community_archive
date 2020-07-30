@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'hyrax', '~> 2.8.0'
+gem 'hyrax', '3.0.0.pre.rc2'
 gem 'linkeddata', '> 3.0'
 #gem 'clamav'
 #gem 'hydra-derivatives', '~> 3.3'
@@ -88,4 +88,4 @@ gem 'exception_notification'
 gem "rack", ">= 2.0.6"
 gem "bootstrap-sass", "~> 3.4.1"
 gem 'blacklight_oai_provider'
-gem 'rdf-vocab', '= 3.1.4' # Specific version pinned due to this issue: https://github.com/samvera/active_fedora/issues/1420
+gem 'rdf-vocab', '< 3.1.5' # Due to this issue: https://github.com/samvera/active_fedora/issues/1420
